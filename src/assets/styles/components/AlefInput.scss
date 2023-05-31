@@ -1,0 +1,32 @@
+.alef-input {
+  position: relative;
+  border: 1px solid $grey-L;
+  border-radius: 4px;
+
+  padding: 12px 6px 4px 6px;
+
+  &__placeholder {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    color: $grey;
+    transform: translateY(-100%);
+    font: {
+      size: 8pt;
+    }
+  }
+  &__textfield {
+    border: none;
+    outline: none;
+    color: $black;
+    width: 100%;
+    background-color: transparent;
+
+    &:focus,
+    &:active {
+      border: none;
+      outline: none;
+    }
+  }
+}

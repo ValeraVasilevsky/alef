@@ -1,0 +1,61 @@
+.alef-header {
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid $grey-light;
+
+  &__logo {
+    grid-column-start: 1 / 2;
+  }
+  &__links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+  }
+  &__link {
+    color: $grey;
+    text-decoration: none;
+    transition: 0.2s;
+
+    &:hover,
+    &:active,
+    &_active {
+      color: $black;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .alef-header {
+    padding: 22px 51px;
+    grid-template-columns: $grid-laptop;
+
+    &__links {
+      grid-column: 6 / 8;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .alef-header {
+    padding: 16px 40px;
+    grid-template-columns: $grid-tablet;
+
+    &__links {
+      grid-column: 4 / -1;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .alef-header {
+    padding: 12px 0px;
+
+    grid-template-columns: $grid-mobile;
+
+    &__links {
+      grid-column: 2 / -1;
+    }
+  }
+}

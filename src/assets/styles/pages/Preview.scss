@@ -1,0 +1,38 @@
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__personal-info {
+    margin: 30px 0px 20px 0px;
+  }
+  &__children {
+    margin: 30px 0px 0px;
+  }
+  &__title,
+  &__value {
+    padding: 0;
+    margin: 0;
+    font: {
+      size: 16px;
+    }
+  }
+  &__value {
+    font: {
+      weight: 700;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+    font: {
+      weight: 500;
+    }
+  }
+  &__non-records {
+    margin-top: 24px;
+    text-align: center;
+  }
+  &__card {
+    margin-bottom: 20px;
+  }
+}
